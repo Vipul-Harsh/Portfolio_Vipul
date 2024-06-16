@@ -98,7 +98,7 @@ const aboutData = [
       },
       {
         title: "(Secondary) - MPS International School",
-        stage: "2019 - 91.2%",
+        stage: "2017 - 2019 - 91.2%",
       },
     ],
   },

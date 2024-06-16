@@ -21,7 +21,7 @@ const Home = () => {
           >
             Hi There!
             <br />I am <span className="text-yellow-500">Vipul Harsh,</span>
-            <br />I am A{" "}
+            <br />I am a{" "}
             <span className="text-red-500">Software Developer</span>
             <br />
           </motion.h1>
