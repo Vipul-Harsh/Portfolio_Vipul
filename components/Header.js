@@ -9,7 +9,7 @@ const Header = () => {
             <span className="text-4xl font-bold text-cyan-400">Vipul</span>
             <span className="text-1xl gap-1 ">Harsh</span>
           </h1>
-          <Social/>
+          {/* <Social/> */}
         </div>
       </div>
     </header>
