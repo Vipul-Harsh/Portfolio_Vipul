@@ -1,0 +1,19 @@
+.tooltip {
+    position: absolute;
+    right: 0;
+    padding-right: 3.5rem; /* Adjust for spacing */
+    display: none;
+  }
+  
+  .nav-link:hover .tooltip {
+    display: flex;
+  }
+  
+  .tooltip-text {
+    background: white;
+    padding: 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem; /* Adjust text size */
+    color: #000; /* Adjust text color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for tooltip */
+  }
