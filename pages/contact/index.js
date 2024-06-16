@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="container mx-auto py-32  text-center  xl:text-left  flex items-center justify-center h-full">
         <div className="flex flex-col">
           <h2 className=" h2 text-center mb-12  max-w-[700px]">
-            Let's <span className=" text-accent">Connect</span>.
+            Let&apos;s <span className=" text-accent">Connect</span>.
           </h2>
           <form
             action="https://formspree.io/f/xpzvvkne"
@@ -32,7 +32,7 @@ const Contact = () => {
             duration-300  flex items-center justify-center overflow-hidden hover:border-accent group"
             type="submit"
             >
-              <span>Let's Talk</span>
+              <span>Let&apos;s Talk</span>
               <BsArrowRight />
             </button>
           </form>
