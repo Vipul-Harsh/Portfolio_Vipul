@@ -21,8 +21,8 @@ const Home = () => {
           >
             Hi There!
             <br />I am <span className="text-yellow-500">Vipul Harsh,</span>
-            <br />I am into{" "}
-            <span className="text-red-500">Web Development</span>
+            <br />I am A{" "}
+            <span className="text-red-500">Software Developer</span>
             <br />
           </motion.h1>
 
@@ -33,15 +33,15 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-100"
           >
-            If you want to work with me or have some ideas for projects, Hire
-            me!
-            <a href="https://drive.google.com/file/d/1Qk8C-cWmty_j2-zbNBmPdRuNm2N6ShmU/view?usp=sharing" style={{position:"relative",zIndex:"1"}} download="VipulHarsh_resume.pdf" target="_blank">
-            <button className="bg-yellow-600 p-4 rounded-full flex flex-col justify-center hover:cursor-pointer hover:bg-yellow-900 hidden md:inline-block">
+            If you want to work with me or have some ideas for projects, Let's Connect!
+            
+           
+          </motion.p>
+          <a href="https://drive.google.com/file/d/1Qk8C-cWmty_j2-zbNBmPdRuNm2N6ShmU/view?usp=sharing" style={{position:"relative",zIndex:"1"}} className=" m-0" download="VipulHarsh_resume.pdf" target="_blank">
+            <button className=" bg-slate-600 p-3.5 rounded-full flex flex-col justify-center hover:cursor-pointer hover:bg-accent hidden md:inline-block">
               Download CV
             </button>
             </a>
-           
-          </motion.p>
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"

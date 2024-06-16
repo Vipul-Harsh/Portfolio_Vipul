@@ -3,8 +3,8 @@ import Link from "next/link";
 import { HiArrowRight, HiArrowRightCircle } from "react-icons/hi2";
 
 const ProjectsBtn = () => {
-  return <div className="mx-auto xl:mx-0">
-  <Link href={'/work'}
+  return <div className="mx-auto xl:mx-0" style={{position:"relative" ,zIndex:"1"}}>
+  <Link href="https://drive.google.com/file/d/1Qk8C-cWmty_j2-zbNBmPdRuNm2N6ShmU/view?usp=sharing"  download="VipulHarsh_Resume.pdf" target="_blank"
   className="relative w-[125px] h-[125px]  flex justify-center items-center bg-circleStar 
   bg-cover bg-center bg-no-repeat group">
     <Image

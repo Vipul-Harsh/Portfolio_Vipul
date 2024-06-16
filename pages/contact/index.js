@@ -13,7 +13,7 @@ const Contact = () => {
           <form
             action="https://formspree.io/f/xpzvvkne"
             method="POST"
-            className=" flex-1 flex  flex-col gap-6 w-full mx-auto "
+            className=" flex-1 flex  flex-col gap-4 w-full mx-auto -mt-6 "
           >
             <div className="flex gap-x-6 w-full gap-4">
               <input className="input" type="text" placeholder="Name" name="name" />
