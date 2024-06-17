@@ -20,9 +20,9 @@ const Home = () => {
             className="text-[20px] md:text-[40px]" // Tailwind responsive utility classes
           >
             Hi There!
-            <br />I am <span className="text-yellow-500">Vipul Harsh,</span>
+            <br />I am <span className=" text-green-300">Vipul Harsh,</span>
             <br />I am a{" "}
-            <span className="text-red-500">Software Developer</span>
+            <span className=" text-green-300">Software Developer</span>
             <br />
           </motion.h1>
 
@@ -55,7 +55,7 @@ const Home = () => {
       </div>
       <div className="w-[1200px] h-full absolute right-0 bottom-0 ">
         <div
-          className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right
+          className="bg-none  xl:bg-cover xl:bg-right
       xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
         ></div>
         <ParticlesContainer />
