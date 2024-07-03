@@ -33,11 +33,11 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-100"
           >
-            If you want to work with me or have some ideas for projects, Let&apos;s Connect!
+           If you're interested in collaborating or have project ideas, let&apos;s connect!
             
            
           </motion.p>
-          <a href="https://drive.google.com/file/d/1Qk8C-cWmty_j2-zbNBmPdRuNm2N6ShmU/view?usp=sharing" style={{position:"relative",zIndex:"1"}} className=" m-0" download="VipulHarsh_resume.pdf" target="_blank">
+          <a href="https://drive.google.com/file/d/15j5GXWXVKFWOb8DNxSATNniU_FRh4X3d/view?usp=sharing" style={{position:"relative",zIndex:"1"}} className=" m-0" download="VipulHarsh_resume.pdf" target="_blank">
             <button className=" bg-slate-600 p-3.5 rounded-full flex flex-col justify-center hover:cursor-pointer hover:bg-accent hidden md:inline-block">
               Download CV
             </button>
