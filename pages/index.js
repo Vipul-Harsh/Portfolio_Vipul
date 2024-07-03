@@ -33,7 +33,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-100"
           >
-           If you're interested in collaborating or have project ideas, let&apos;s connect!
+           If you&apos;re interested in collaborating or have project ideas, let&apos;s connect!
             
            
           </motion.p>
