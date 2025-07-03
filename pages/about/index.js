@@ -14,7 +14,7 @@ const aboutData = [
     info: [
       {
         title:
-          "Hi there! I'm Vipul Harsh, a passionate Software Developer currently pursuing my Bachelor's degree from JECRC Foundation. I specialize in building scalable, reliable software using technologies like MERN Stack, Next.js, Spring Boot, and more. I've completed multiple projects and internships to enhance my technical skills and contribute to real-world solutions.",
+          "Hi there! I&apos;m Vipul Harsh, a passionate Software Developer currently pursuing my Bachelor&apos;s degree from JECRC Foundation. I specialize in building scalable, reliable software using technologies like MERN Stack, Next.js, Spring Boot, and more. I&apos;ve completed multiple projects and internships to enhance my technical skills and contribute to real-world solutions.",
         stage: "",
       },
     ],
@@ -133,7 +133,7 @@ const About = () => {
         <div className="flex-1 hidden md:flex flex-col justify-center mb-8 xl:mb-0">
           <h2 className="text-2xl md:text-4xl font-semibold mb-4">About Me</h2>
           <p>
-            Hi there! I'm <span className="text-accent font-semibold">Vipul Harsh</span>, a passionate Software Developer currently pursuing my Bachelor's degree from JECRC Foundation. I specialize in building scalable, reliable software using technologies like MERN Stack, Next.js, Spring Boot, and more. I've completed multiple projects and internships to enhance my technical skills and contribute to real-world solutions.
+            Hi there! I&apos;m <span className="text-accent font-semibold">Vipul Harsh</span>, a passionate Software Developer currently pursuing my Bachelor&apos;s degree from JECRC Foundation. I specialize in building scalable, reliable software using technologies like MERN Stack, Next.js, Spring Boot, and more. I&apos;ve completed multiple projects and internships to enhance my technical skills and contribute to real-world solutions.
           </p>
 
           {/* Stats */}
@@ -184,7 +184,7 @@ const About = () => {
           </div>
 
           {/* Tab Content */}
-          <div className="py-2 xl:py-5 flex flex-col gap-y-5 xl:gap-y-4 items-center xl:items-start ">
+          <div className="py-2 xl:py-5 flex flex-col gap-y-5 xl:gap-y-4 items-center xl:items-start">
             {displayedData[index].info.map((info, idx) => (
               <div key={idx} className="text-center xl:text-left w-full">
                 <div className="font-semibold text-lg mb-1">{info.title}</div>

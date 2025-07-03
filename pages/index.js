@@ -8,12 +8,13 @@ import { fadeIn } from "../variants";
 const Home = () => {
   return (
     <div className="bg-primary/60 h-full relative overflow-hidden">
+      
       {/* Background Gradient Layer */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/10 to-black/10">
         
         {/* Content Container */}
         <div className="container mx-auto h-full flex flex-col justify-center items-center text-center xl:items-start xl:text-left xl:pt-40">
-
+          
           {/* Headline */}
           <motion.h1
             variants={fadeIn("down", 0.4)}
@@ -22,11 +23,11 @@ const Home = () => {
             exit="hidden"
             className="text-[22px] md:text-[44px] font-bold leading-snug"
           >
-            Hi, I'm <span className="text-yellow-500">Vipul Harsh</span>
+            Hi, I&apos;m <span className="text-yellow-500">Vipul Harsh</span>
             <br />
             A Passionate <span className="text-red-500">Software Developer</span>
             <br />
-            Building Innovative & Scalable Solutions.
+            Building Innovative &amp; Scalable Solutions.
           </motion.h1>
 
           {/* Subtext & CTA */}
@@ -38,7 +39,7 @@ const Home = () => {
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-8 xl:mb-16"
           >
             I specialize in developing reliable software that solves real-world problems.
-            Looking for collaboration or exciting opportunities? Let's connect!
+            Looking for collaboration or exciting opportunities? Let&apos;s connect!
           </motion.p>
 
           {/* Download CV Button */}
@@ -50,8 +51,9 @@ const Home = () => {
             className="flex flex-col md:flex-row gap-4 items-center"
           >
             <a
-              href="https://drive.google.com/file/d/1_FdLQ6qhWetvHxBZBfKxQZPFMuP1gQDo/view?usp=sharing" // Update with your CV path
-              download
+              href="https://drive.google.com/file/d/1_FdLQ6qhWetvHxBZBfKxQZPFMuP1gQDo/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-yellow-600 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-700 transition"
             >
               Download CV
@@ -62,13 +64,14 @@ const Home = () => {
               <ProjectsBtn />
             </div>
           </motion.div>
+
         </div>
       </div>
 
       {/* Right Side Visual Elements */}
       <div className="w-full h-full absolute right-0 bottom-0 overflow-hidden pointer-events-none">
         
-        {/* Background Explosion Effect for Large Screens */}
+        {/* Background Explosion (Only XL Screens) */}
         <div className="hidden xl:block absolute w-full h-full bg-explosion bg-cover bg-right bg-no-repeat mix-blend-color-dodge"></div>
 
         {/* Particle Effects */}
@@ -85,8 +88,11 @@ const Home = () => {
           <Avatar />
         </motion.div>
 
-        {/* Projects Button for XL screens */}
-       
+        {/* Projects Button (For XL screens) */}
+        <div className="hidden xl:block absolute right-[8%] bottom-10 z-50">
+          <ProjectsBtn />
+        </div>
+
       </div>
     </div>
   );
