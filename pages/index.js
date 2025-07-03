@@ -4,70 +4,89 @@ import Avatar from "../components/Avatar";
 import ProjectsBtn from "../components/ProjectsBtn";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
-      <div className="w-full h-full  bg-gradient-to-r from-primary/10 via-black/10  to-black/10 ">
-        <div
-          className="text-center flex flex-col justify-center xl:pt-40 xl:text-left
- container  mx-auto h-full"
-        >
+    <div className="bg-primary/60 h-full relative overflow-hidden">
+      {/* Background Gradient Layer */}
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/10 to-black/10">
+        
+        {/* Content Container */}
+        <div className="container mx-auto h-full flex flex-col justify-center items-center text-center xl:items-start xl:text-left xl:pt-40">
+
+          {/* Headline */}
           <motion.h1
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-[20px] md:text-[40px]" // Tailwind responsive utility classes
+            className="text-[22px] md:text-[44px] font-bold leading-snug"
           >
-            Hi There!
-            <br />I am <span className=" text-green-300">Vipul Harsh,</span>
-            <br />I am a{" "}
-            <span className=" text-green-300">Software Developer</span>
+            Hi, I'm <span className="text-yellow-500">Vipul Harsh</span>
             <br />
+            A Passionate <span className="text-red-500">Software Developer</span>
+            <br />
+            Building Innovative & Scalable Solutions.
           </motion.h1>
 
+          {/* Subtext & CTA */}
           <motion.p
-            variants={fadeIn("down", 0.4)}
+            variants={fadeIn("down", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-100"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-8 xl:mb-16"
           >
-           If you&apos;re interested in collaborating or have project ideas, let&apos;s connect!
-            
-           
+            I specialize in developing reliable software that solves real-world problems.
+            Looking for collaboration or exciting opportunities? Let's connect!
           </motion.p>
-          <a href="https://drive.google.com/file/d/15j5GXWXVKFWOb8DNxSATNniU_FRh4X3d/view?usp=sharing" style={{position:"relative",zIndex:"1"}} className=" m-0" download="VipulHarsh_resume.pdf" target="_blank">
-            <button className=" bg-slate-600 p-3.5 rounded-full flex flex-col justify-center hover:cursor-pointer hover:bg-accent hidden md:inline-block">
-              Download CV
-            </button>
-            </a>
+
+          {/* Download CV Button */}
           <motion.div
-            variants={fadeIn("down", 0.4)}
+            variants={fadeIn("down", 0.8)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex justify-center xl:hidden relative"
+            className="flex flex-col md:flex-row gap-4 items-center"
           >
-            <ProjectsBtn />
+            <a
+              href="https://drive.google.com/file/d/1_FdLQ6qhWetvHxBZBfKxQZPFMuP1gQDo/view?usp=sharing" // Update with your CV path
+              download
+              className="bg-yellow-600 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-700 transition"
+            >
+              Download CV
+            </a>
+
+            {/* Projects Button (Hidden on XL, shown below Avatar for large screens) */}
+            <div className="md:hidden">
+              <ProjectsBtn />
+            </div>
           </motion.div>
         </div>
       </div>
-      <div className="w-[1200px] h-full absolute right-0 bottom-0 ">
-        <div
-          className="bg-none  xl:bg-cover xl:bg-right
-      xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
-        ></div>
+
+      {/* Right Side Visual Elements */}
+      <div className="w-full h-full absolute right-0 bottom-0 overflow-hidden pointer-events-none">
+        
+        {/* Background Explosion Effect for Large Screens */}
+        <div className="hidden xl:block absolute w-full h-full bg-explosion bg-cover bg-right bg-no-repeat mix-blend-color-dodge"></div>
+
+        {/* Particle Effects */}
         <ParticlesContainer />
+
+        {/* Avatar */}
         <motion.div
           variants={fadeIn("down", 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="w-full h-full max-w-[300px] max-h-[530px] absolute -bottom-30 lg:bottom-1 lg:right-[15%]"
+          className="absolute w-full h-full max-w-[300px] max-h-[530px] -bottom-20 lg:bottom-0 lg:right-[15%]"
         >
           <Avatar />
         </motion.div>
+
+        {/* Projects Button for XL screens */}
+       
       </div>
     </div>
   );
